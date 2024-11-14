@@ -1,0 +1,56 @@
+{
+   "ExaCAVersion": "2.1.0-dev", 
+   "ExaCACommitHash": "3e824d715c9b8c863e30aff113ae69c01e2f79db", 
+   "KokkosVersion": "4.5.99", 
+   "InputFile": "examples/Inp_DirSolidification.json", 
+   "TimeStepOfOutput": 46000,
+   "SimulationType": "Directional",
+   "GrainOrientationFile": "/var/tmp/repos/ExaCA/examples/Substrate/GrainOrientationVectors.csv",
+   "Domain": {
+      "Nx": 128,
+      "Ny": 128,
+      "Nz": 128,
+      "CellSize": 1e-06,
+      "TimeStep": 1e-08,
+      "XBounds": [0,0.000127],
+      "YBounds": [0,0.000127],
+      "ZBounds": [0,0.000127]
+   },
+   "Nucleation": {
+      "Density": 5e+12,
+      "MeanUndercooling": 5,
+      "StDevUndercooling": 0.5,
+      "VolFractionNucleated": 0.39326
+   },
+   "TemperatureData": {
+      "G": 500000,
+      "R": 300000
+   },
+   "Substrate": {
+       "SurfaceSiteFraction": 0.04
+   },
+   "InterfacialResponse": {
+       "Function": "0",
+       "A": -1.0302e-07,
+       "B": 0.00010533,
+       "C": 0.0022196,
+       "D": 0,
+       "FreezingRange": 210
+   },
+   "NumberMPIRanks": 1,
+   "Decomposition": {
+       "SubdomainYSize": [128],
+       "SubdomainYOffset": [0]
+   },
+   "Timing": {
+       "Runtime": 25.0581,
+       "InitRunOutputBreakdown": [0.0394776,24.5615,0.457167],
+       "MaxMinInitTime": [0.0394776,0.0394776],
+       "MaxMinNucleationTime": [0.0225897,0.0225897],
+       "MaxMinSteeringVectorCreationTime": [6.72116,6.72116],
+       "MaxMinCellCaptureTime": [5.52624,5.52624],
+       "MaxMinGhostExchangeTime": [0,0],
+       "MaxMinOutputTime": [0.457167,0.457167]
+   }
+
+}
