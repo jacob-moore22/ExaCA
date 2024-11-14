@@ -41,7 +41,7 @@ show_help() {
 build_action="full-app"
 # solver="SGH"
 machine="linux"
-kokkos_build_type="cuda"
+kokkos_build_type="serial"
 build_cores="8"
 debug="false"
 
